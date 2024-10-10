@@ -13,9 +13,9 @@ import {
 import { statCardLocales } from "../translations.js";
 
 const CARD_MIN_WIDTH = 200;
-const CARD_DEFAULT_WIDTH = 287;
+const CARD_DEFAULT_WIDTH = 300;
 const RANK_CARD_MIN_WIDTH = 200;
-const RANK_CARD_DEFAULT_WIDTH = 450;
+const RANK_CARD_DEFAULT_WIDTH = 400;
 const RANK_ONLY_CARD_MIN_WIDTH = 200;
 const RANK_ONLY_CARD_DEFAULT_WIDTH = 290;
 
@@ -138,7 +138,7 @@ const getStyles = ({
 }) => {
   return `
     .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: ${textColor};
+      font: 400 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: ${textColor};
     }
     @supports(-moz-appearance: auto) {
       /* Selector detects Firefox */
@@ -149,7 +149,7 @@ const getStyles = ({
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor};
+      font: 600 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor};
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -220,7 +220,7 @@ const renderStatsCard = (stats, options = {}) => {
     hide_title = false,
     hide_border = false,
     card_width,
-    hide_rank = false,
+    hide_rank = true,
     include_all_commits = true,
     line_height = 25,
     title_color,
@@ -392,7 +392,7 @@ const renderStatsCard = (stats, options = {}) => {
   // Calculate the card height depending on how many items there are
   // but if rank circle is visible clamp the minimum height to `150`
   let height = Math.max(
-    45 + (statItems.length + 1) * lheight,
+    25 + (statItems.length + 1) * lheight,
     hide_rank ? 0 : statItems.length ? 150 : 180,
   );
 
@@ -426,7 +426,7 @@ const renderStatsCard = (stats, options = {}) => {
   const minCardWidth =
     (hide_rank
       ? clampValue(
-          50 /* padding */ + calculateTextWidth() * 2,
+          20 /* padding */ + calculateTextWidth() * 2,
           CARD_MIN_WIDTH,
           Infinity,
         )
@@ -485,7 +485,7 @@ const renderStatsCard = (stats, options = {}) => {
    */
   const calculateRankXTranslation = () => {
     if (statItems.length) {
-      const minXTranslation = RANK_CARD_MIN_WIDTH + iconWidth - 70;
+      const minXTranslation = RANK_CARD_MIN_WIDTH + iconWidth - 20;
       if (width > RANK_CARD_DEFAULT_WIDTH) {
         const xMaxExpansion = minXTranslation + (450 - minCardWidth) / 2;
         return xMaxExpansion + width - RANK_CARD_DEFAULT_WIDTH;
