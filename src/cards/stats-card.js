@@ -534,7 +534,7 @@ const renderStatsCard = (stats, options = {}) => {
     <svg x="0" y="0">
       ${flexLayout({
         items: statItems,
-        gap: lheight,
+        gap: 10,
         direction: "column",
       }).join("")}
     </svg>
