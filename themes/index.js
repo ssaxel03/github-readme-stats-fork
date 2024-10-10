@@ -7,10 +7,10 @@ export const themes = {
     border_color: "e4e2e2", // light gray
   },
   default_repocard: {
-    title_color: "2f80ed",
+    title_color: "ff7f21",
     icon_color: "49b3bf", // icon color is different
-    text_color: "434d58",
-    bg_color: "fffefe",
+    text_color: "e2e9ec",
+    bg_color: "554b44",
   },
   transparent: {
     title_color: "006AFF",
