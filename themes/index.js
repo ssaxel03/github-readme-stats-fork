@@ -1,14 +1,14 @@
 export const themes = {
   default: {
-    title_color: "2f80ed",
-    icon_color: "4c71f2",
-    text_color: "434d58",
-    bg_color: "fffefe",
-    border_color: "e4e2e2",
+    title_color: "ff7f21", // pastel orange
+    icon_color: "49b3bf", // light pastel blue
+    text_color: "e2e9ec", // very light gray, almost white
+    bg_color: "554b44", // dark gray
+    border_color: "e4e2e2", // light gray
   },
   default_repocard: {
     title_color: "2f80ed",
-    icon_color: "586069", // icon color is different
+    icon_color: "49b3bf", // icon color is different
     text_color: "434d58",
     bg_color: "fffefe",
   },

@@ -17,8 +17,8 @@ import {
 import { repoCardLocales } from "../translations.js";
 
 const ICON_SIZE = 16;
-const DESCRIPTION_LINE_WIDTH = 59;
-const DESCRIPTION_MAX_LINES = 3;
+const DESCRIPTION_LINE_WIDTH = 50;
+const DESCRIPTION_MAX_LINES = 1;
 
 /**
  * Retrieves the repository description and wraps it to fit the card width.
@@ -152,7 +152,7 @@ const renderRepoCard = (repo, options = {}) => {
   const card = new Card({
     defaultTitle: header.length > 35 ? `${header.slice(0, 35)}...` : header,
     titlePrefixIcon: icons.contribs,
-    width: 400,
+    width: 330,
     height,
     border_radius,
     colors,

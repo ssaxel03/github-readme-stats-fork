@@ -12,11 +12,11 @@ import {
 } from "../common/utils.js";
 import { statCardLocales } from "../translations.js";
 
-const CARD_MIN_WIDTH = 287;
+const CARD_MIN_WIDTH = 200;
 const CARD_DEFAULT_WIDTH = 287;
-const RANK_CARD_MIN_WIDTH = 420;
+const RANK_CARD_MIN_WIDTH = 200;
 const RANK_CARD_DEFAULT_WIDTH = 450;
-const RANK_ONLY_CARD_MIN_WIDTH = 290;
+const RANK_ONLY_CARD_MIN_WIDTH = 200;
 const RANK_ONLY_CARD_DEFAULT_WIDTH = 290;
 
 /**
@@ -216,12 +216,12 @@ const renderStatsCard = (stats, options = {}) => {
   } = stats;
   const {
     hide = [],
-    show_icons = false,
+    show_icons = true,
     hide_title = false,
     hide_border = false,
     card_width,
     hide_rank = false,
-    include_all_commits = false,
+    include_all_commits = true,
     line_height = 25,
     title_color,
     ring_color,
