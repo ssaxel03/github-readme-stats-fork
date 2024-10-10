@@ -46,7 +46,7 @@ class Card {
     this.css = "";
 
     this.paddingX = 40;
-    this.paddingY = 50;
+    this.paddingY = 40;
     this.titlePrefixIcon = titlePrefixIcon;
     this.animations = true;
     this.a11yTitle = "";
@@ -245,7 +245,7 @@ class Card {
           rx="${this.border_radius}"
           height="99%"
           stroke="${this.colors.borderColor}"
-          width="${this.width - 1}"
+          width="${this.width - 10}"
           fill="${
             typeof this.colors.bgColor === "object"
               ? "url(#gradient)"
