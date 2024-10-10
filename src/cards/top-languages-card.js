@@ -12,10 +12,10 @@ import {
 } from "../common/utils.js";
 import { langCardLocales } from "../translations.js";
 
-const DEFAULT_CARD_WIDTH = 300;
-const MIN_CARD_WIDTH = 200;
+const DEFAULT_CARD_WIDTH = 130;
+const MIN_CARD_WIDTH = 100;
 const DEFAULT_LANG_COLOR = "#e2e9ec";
-const CARD_PADDING = 50;
+const CARD_PADDING = 25;
 const COMPACT_LAYOUT_BASE_HEIGHT = 100;
 const MAXIMUM_LANGS_COUNT = 20;
 
