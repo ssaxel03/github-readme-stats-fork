@@ -392,8 +392,8 @@ const renderStatsCard = (stats, options = {}) => {
   // Calculate the card height depending on how many items there are
   // but if rank circle is visible clamp the minimum height to `150`
   let height = Math.max(
-    25 + (statItems.length + 1) * lheight,
-    hide_rank ? 0 : statItems.length ? 200 : 180,
+    70 + (statItems.length + 1) * lheight,
+    hide_rank ? 0 : statItems.length ? 150 : 180,
   );
 
   // the lower the user's percentile the better
