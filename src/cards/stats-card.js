@@ -13,7 +13,7 @@ import {
 import { statCardLocales } from "../translations.js";
 
 const CARD_MIN_WIDTH = 50;
-const CARD_DEFAULT_WIDTH = 100;
+const CARD_DEFAULT_WIDTH = 130;
 const RANK_CARD_MIN_WIDTH = 200;
 const RANK_CARD_DEFAULT_WIDTH = 400;
 const RANK_ONLY_CARD_MIN_WIDTH = 200;
