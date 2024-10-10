@@ -444,7 +444,6 @@ const renderStatsCard = (stats, options = {}) => {
       ? defaultCardWidth
       : card_width
     : defaultCardWidth;
-    height = 200px;
   if (width < minCardWidth) {
     width = minCardWidth;
   }
@@ -455,7 +454,7 @@ const renderStatsCard = (stats, options = {}) => {
       ? i18n.t("statcard.title")
       : i18n.t("statcard.ranktitle"),
     width,
-    height,
+    200,
     border_radius,
     colors: {
       titleColor,
