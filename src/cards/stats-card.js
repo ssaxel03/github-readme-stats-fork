@@ -393,7 +393,7 @@ const renderStatsCard = (stats, options = {}) => {
   // but if rank circle is visible clamp the minimum height to `150`
   let height = Math.max(
     50 + (statItems.length + 1) * lheight,
-    hide_rank ? 0 : statItems.length ? 150 : 150,
+    hide_rank ? 0 : statItems.length ? 135 : 135,
   );
 
   // the lower the user's percentile the better
