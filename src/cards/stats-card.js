@@ -444,6 +444,7 @@ const renderStatsCard = (stats, options = {}) => {
       ? defaultCardWidth
       : card_width
     : defaultCardWidth;
+    height = 200px;
   if (width < minCardWidth) {
     width = minCardWidth;
   }
