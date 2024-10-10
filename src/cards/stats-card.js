@@ -454,7 +454,7 @@ const renderStatsCard = (stats, options = {}) => {
       ? i18n.t("statcard.title")
       : i18n.t("statcard.ranktitle"),
     width,
-    200,
+    height,
     border_radius,
     colors: {
       titleColor,
