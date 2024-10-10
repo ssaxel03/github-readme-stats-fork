@@ -440,10 +440,10 @@ const renderStatsCard = (stats, options = {}) => {
         ? RANK_CARD_DEFAULT_WIDTH
         : RANK_ONLY_CARD_DEFAULT_WIDTH) + iconWidth;
   let width = card_width
-    ? isNaN(card_width)
-      ? defaultCardWidth
-      : card_width
-    : defaultCardWidth;
+      ? isNaN(card_width)
+        ? defaultCardWidth
+        : card_width
+      : defaultCardWidth;
   if (width < minCardWidth) {
     width = minCardWidth;
   }
