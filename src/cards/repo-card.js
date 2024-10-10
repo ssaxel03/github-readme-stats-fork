@@ -29,7 +29,7 @@ const DESCRIPTION_MAX_LINES = 1;
  */
 const getBadgeSVG = (label, textColor) => `
   <g data-testid="badge" class="badge" transform="translate(320, -18)">
-    <rect stroke="${textColor}" stroke-width="1" width="70" height="20" x="-12" y="-14" ry="10" rx="10"></rect>
+    <rect stroke="${textColor}" stroke-width="1" width="330" height="110" x="-12" y="-14" ry="10" rx="10"></rect>
     <text
       x="23" y="-5"
       alignment-baseline="central"
