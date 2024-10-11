@@ -3,14 +3,14 @@ export const themes = {
     title_color: "ff7f21", // pastel orange
     icon_color: "49b3bf", // light pastel blue
     text_color: "e2e9ec", // very light gray, almost white
-    bg_color: "0d1117", // dark gray
+    bg_color: "202020", // dark gray
     border_color: "e4e2e2", // light gray
   },
   default_repocard: {
     title_color: "ff7f21",
     icon_color: "49b3bf", // icon color is different
     text_color: "e2e9ec",
-    bg_color: "0d1117",
+    bg_color: "202020",
   },
   transparent: {
     title_color: "006AFF",
